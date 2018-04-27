@@ -9,7 +9,7 @@ gulp.task("default", function () {
         .js.pipe(gulp.dest("dist"));
 });
 
-gulp.task('start', function(){
+gulp.task('start', ['default'], function(){
     gulp.watch('src/**/*.ts', ['default']); 
     // Other watchers
-  })
+  });
