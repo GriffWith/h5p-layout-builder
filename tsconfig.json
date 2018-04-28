@@ -1,9 +1,15 @@
 {
-    "files": [
-        "src/main.ts"
-    ],
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "target": "es5"
-    }
+  "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "sourceMap": true,
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*"
+  ]  
 }
