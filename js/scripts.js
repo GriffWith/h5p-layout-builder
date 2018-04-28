@@ -8,6 +8,13 @@ var ColumnEditor = function(root) {
     myRoot.innerHTML = 'This is where it all will happen';
 }
 
+var ColumnItem = function() {
+    var createDom = function() {
+        var item = document.createElement('div');
+        item.innerHTML = '<div class="item-menu">'
+    }
+}
+
 /**
  * TODO:
  *  - Add item menu
