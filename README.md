@@ -10,5 +10,7 @@ npm install
 
 For live compiling and updates:
 ```shell
-gulp
+npm start
 ```
+
+Go to http://localhost:8080/
