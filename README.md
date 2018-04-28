@@ -4,7 +4,12 @@
 ## Getting started
 Open project in a terminal/cmd
 
-Setting up project with dependencies: "npm install"
+Setting up project with dependencies:
+```shell
+npm install
+```
 
-For live compiling and updates: "gulp"
-
+For live compiling and updates:
+```shell
+gulp
+```
