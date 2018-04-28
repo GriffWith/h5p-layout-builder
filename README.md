@@ -2,7 +2,6 @@
 
 
 ## Getting started
-Open project in a terminal/cmd
 
 Setting up project with dependencies:
 ```shell
