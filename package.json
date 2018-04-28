@@ -4,11 +4,13 @@
   "description": "",
   "main": "gulefile.js",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-typescript": "^4.0.2",
     "typescript": "^2.8.3"
   },
   "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-typescript": "^4.0.2",
     "gulp-watch": "^5.0.0"
   },
   "scripts": {
