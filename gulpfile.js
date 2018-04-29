@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 var tsProject = ts.createProject("tsconfig.json");
 
 gulp.task("build", function () {
-    gulp.src("src/*.ts")
+    gulp.src("src/ts/*.ts")
         .pipe(tsProject())
         .js.pipe(gulp.dest("dist"));
 });
@@ -32,7 +32,7 @@ gulp.task('serve', ['sass', "build", "html"], function() {
     });
 
     gulp.watch("src/scss/*.scss", ['sass']);
-    gulp.watch("src/*.ts", ['build']);
+    gulp.watch("src/ts/*.ts", ['build']);
     gulp.watch("src/*.html", ['html']);
     // gulp.watch("src/*.html").on('change', browserSync.reload);
     // gulp.watch("src/*.ts").on('change', browserSync.reload);

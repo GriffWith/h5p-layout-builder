@@ -1,27 +1,25 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
     var myRoot = document.getElementById('here-i-am');
-    var ce = new ColumnEditor(myRoot);
+    let ti = new TextItem();
+    myRoot.appendChild(ti.createDom());
+    let br = new ButtonRow();
+    myRoot.appendChild(br.createDom());
+});
+
+/**var ce = new ColumnEditor(myRoot);
 });
 
 var ColumnEditor = function(root) {
     var myRoot = root;
-    myRoot.innerHTML = 'This is where it all will happen';
-}
+    
+} */
 
-var ColumnItem = function() {
-    var createDom = function() {
-        var item = document.createElement('div');
-        item.innerHTML = '<div class="item-menu">'
-    }
-}
 
 /**
  * TODO:
- *  - Add item menu
- *  -- Visible when item is active
  *  - Add elements
  *  -- Buttons at the bottom of the column, last used first?
- *  -- OR + button everywhere content may be added?
+ *  -- + button between every item in the column that reveals the button row?
  *  - Sort elements
  *  -- By clicking - up down arrows on every element
  *  - Delete elements
